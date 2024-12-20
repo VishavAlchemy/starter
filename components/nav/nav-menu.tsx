@@ -67,30 +67,33 @@ export function NavMenu() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
+                    <img 
+                      src="https://i.pinimg.com/736x/4e/07/62/4e07625f0b07d333b03e8998f37fad42.jpg" 
+                      alt="Alkemy World Logo" 
+                      className="mb-2 w-32 h-32 object-cover"
+                    />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Alkemy World
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                      Build with purpose. 
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/brand-genesis" title="Brand Genesis">
+                Build your own digital brand in 90 days.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/100-book-saiyans" title="100 Book Saiyans">
+                Read 100 books in 1 year, a challenge for knowledge.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/about-me" title="Alchemy Quest">
+                Unlock quantum focus. Do more in less time.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -105,11 +108,11 @@ export function NavMenu() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/about-me" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              About Me
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
