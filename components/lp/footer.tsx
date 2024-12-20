@@ -15,7 +15,7 @@ import { Github, Twitter, Facebook } from "lucide-react";
 import { Section, Container } from "../craft";
 
 // Asset imports
-import Logo from "@/public/LogoAlk.svg";
+import Logo from "@/public/alk-simple-logo.svg";
 
 export default function Footer() {
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
         <Container className="grid gap-6">
           <div className="not-prose flex flex-col gap-6">
             <Link href="/">
-              <h3 className="sr-only">brijr/components</h3>
+              <h3 className="sr-only">ALK</h3>
               <Image
                 src={Logo}
                 alt="Logo"
