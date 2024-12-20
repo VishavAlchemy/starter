@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import { ArrowRight } from "lucide-react";
+import { EmailCTA } from '@/components/7dc/emailcta'
 
 // UI Components
 import { Button } from "@/components/ui/button";
@@ -37,6 +38,7 @@ export default function Hero() {
                A framework that top-brands like Apple, Nike, Lululemon helped to shape their brand. Passed over to you. (the same system I used to create a brand to 6000+ customers)
             </Balancer>
           </h3>
+          <EmailCTA />
            <div className="my-8 h-96 w-full overflow-hidden rounded-lg border md:h-[480px] md:rounded-xl">
           <Image 
             className="h-full w-full object-cover"

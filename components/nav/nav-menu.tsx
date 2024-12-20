@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-
+import Image from "next/image";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -67,7 +67,7 @@ export function NavMenu() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <img 
+                    <Image 
                       src="https://i.pinimg.com/736x/4e/07/62/4e07625f0b07d333b03e8998f37fad42.jpg" 
                       alt="Alkemy World Logo" 
                       className="mb-2 w-32 h-32 object-cover"

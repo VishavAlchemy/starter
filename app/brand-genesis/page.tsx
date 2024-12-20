@@ -4,15 +4,15 @@ import Cta from '@/components/7dc/cta'
 import FeatureTwo from '@/components/7dc/featuretwo'
 import React from 'react'
 import { Main } from "@/components/craft";
-
+import { EmailCTA } from '@/components/7dc/emailcta'
 
 const page = () => {
   return (
     <Main>
       <Hero />      
       <Features />
-      <FeatureTwo />
-      <Cta />
+{/*       <FeatureTwo />
+ */}      <Cta />
     </Main>
   )
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
 import "./globals.css";
@@ -9,16 +9,18 @@ import { NavMenu } from "@/components/nav/nav-menu";
 import { MobileNav } from "@/components/nav/mobile-nav";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 
-import Logo from "@/public/LogoAlk.svg";
+import Logo from "@/public/alk-simple-logo.svg";
 
 import Image from "next/image";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
-const fontSans = FontSans({
+const fontSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  fallback: ["system-ui", "arial"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
