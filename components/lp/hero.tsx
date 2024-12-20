@@ -34,7 +34,7 @@ export default function Hero() {
           </h1>
           <h3 className="md:mt-3 md:text-m md:mb-5 text-muted-foreground">
             <Balancer>
-              A brand wizard: A person who is able to materialize the unpopular or unseen into reality by building through purpose & profit.
+              A brand wizard: A person who is able to materialize the unpopular or unseen by following his or her purpose.
             </Balancer>
           </h3>
           <div className="my-8 h-96 w-full overflow-hidden rounded-lg border md:h-[480px] md:rounded-xl">

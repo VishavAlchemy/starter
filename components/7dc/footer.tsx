@@ -35,8 +35,8 @@ export default function Footer() {
             </Link>
             <p>
               <Balancer>
-                brijr/components is a collection of Next.js, React, Typescript
-                components for building landing pages and websites.
+                Alchemy - where the invisible turns visible.
+                For a new generation of brand builders.
               </Balancer>
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
           <p className="text-muted-foreground">
             ©{" "}
-            <a href="https://github.com/brijr/components">brijr/components</a>.
+            <a > ALK - VSH </a>.
             All rights reserved. 2024-present.
           </p>
         </Container>

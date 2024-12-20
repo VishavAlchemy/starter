@@ -4,7 +4,7 @@ import Cta from '@/components/7dc/cta'
 import FeatureTwo from '@/components/7dc/featuretwo'
 import React from 'react'
 import { Main } from "@/components/craft";
-import { EmailCTA } from '@/components/7dc/emailcta'
+import Footer from '@/components/7dc/footer'
 
 const page = () => {
   return (
@@ -12,7 +12,12 @@ const page = () => {
       <Hero />      
       <Features />
 {/*       <FeatureTwo />
- */}      <Cta />
+ */}      
+  <Cta />
+  <Footer/>
+
+  
+ 
     </Main>
   )
 }
