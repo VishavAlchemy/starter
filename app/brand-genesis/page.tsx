@@ -11,8 +11,7 @@ const page = () => {
     <Main>
       <Hero />      
       <Features />
-{/*       <FeatureTwo />
- */}      
+
   <Cta />
   <Footer/>
 
