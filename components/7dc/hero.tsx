@@ -39,8 +39,9 @@ export default function Hero() {
                A framework that top-brands like Apple, Nike, Lululemon helped to shape their brand. Passed over to you. (the same system I used to create a brand to 6000+ customers)
             </Balancer>
           </h3>
-          <EmailCTA />
-          <SignUpFormReact/>
+{/*           <EmailCTA />
+ */}          
+ <SignUpFormReact/>
            <div className="my-8 h-96 w-full overflow-hidden rounded-lg border md:h-[480px] md:rounded-xl">
           <Image 
             className="h-full w-full object-cover"

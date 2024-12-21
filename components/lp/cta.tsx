@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Balancer from "react-wrap-balancer";
 
+
 import { Section, Container } from "@/components/craft";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +17,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import SignUpFormReact from "../ui/form-loops";
 
 const formSchema = z.object({
   email: z.string().email({
@@ -48,7 +50,9 @@ export function CTA() {
             For digital brand builders seeking to build strong digital brands in the modern era. 
           </Balancer>
         </p>
-        <Form {...form}>
+
+        <SignUpFormReact/>  
+        {/* <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
             className="mt-6 flex h-fit items-center justify-center gap-2"
@@ -72,7 +76,7 @@ export function CTA() {
             />
             <Button type="submit">Submit</Button>
           </form>
-        </Form>
+        </Form> */}
       </Container>
     </Section>
   );

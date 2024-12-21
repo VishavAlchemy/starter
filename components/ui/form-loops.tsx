@@ -64,27 +64,16 @@ export default function SignUpFormReact() {
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    // Prevent the default form submission
     event.preventDefault();
 
-    // boundary conditions for submission
-    if (formState !== INIT) return;
-    if (!isValidEmail(email)) {
-      setFormState(ERROR);
-      setErrorMessage("Please enter a valid email");
-      return;
-    }
-    if (hasRecentSubmission()) return;
-    setFormState(SUBMITTING);
-
-    // build body
+    // Log what we're about to send
     const body = {
       email,
       userGroup: formStyles.userGroup,
       ...fields
     };
+    console.log('Sending form data:', body);
 
-    // API request to add user to newsletter
     fetch('/api/newsletter', {
       method: 'POST',
       headers: {
@@ -92,8 +81,9 @@ export default function SignUpFormReact() {
       },
       body: JSON.stringify(body),
     })
-      .then((res) => res.json())
-      .then((data) => {
+      .then(async (res) => {
+        const data = await res.json();
+        console.log('Response:', data);
         if (data.success) {
           resetForm();
           setFormState(SUCCESS);
@@ -104,6 +94,7 @@ export default function SignUpFormReact() {
         }
       })
       .catch((error) => {
+        console.error('Fetch error:', error);
         setFormState(ERROR);
         // check for cloudflare error
         if (error.message === "Failed to fetch") {
