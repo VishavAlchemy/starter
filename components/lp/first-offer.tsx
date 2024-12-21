@@ -15,16 +15,16 @@ const Feature = () => {
       <Container className="grid items-stretch md:grid-cols-2 md:gap-12">
         <div className="flex flex-col gap-3 py-8">
          <p className="text-muted-foreground text-sm">
-          Brand Genesis- Starts December, 2024
+          BRAND BUILDERS GENESIS - STARTS 2025
          </p>
-          <h3 className="-mt-2 !my-0">Brand Building Accelerator</h3>
+          <h3 className="-mt-2 !my-0"> Brand Building Accelerator</h3>
           <p className="font-light leading-[1.4] opacity-70">
           Learn the fundamentals of business & launch your online brand, for Youtube, eCom, SAAS, Info Products, etc. (100% online)
             With a group of like-minded founders & early-stage entrepreneurs
           </p>
           <div className="not-prose flex items-center gap-2">
             <Button className="w-fit" asChild>
-              <Link href="#">Get Started</Link>
+              <Link href="#">Coming Soon</Link>
             </Button>
             <Button className="w-fit" variant="link" asChild>
               <Link href="#">Learn More {"->"}</Link>

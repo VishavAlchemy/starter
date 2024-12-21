@@ -45,6 +45,7 @@ export default function Hero() {
             muted 
             playsInline
             poster="https://i.pinimg.com/736x/b6/ba/e7/b6bae79b56e4c06fb8f961f54c9ca2f0.jpg"
+            width={1000}
           >
             <source 
               src="/videos/hero.mp4" 

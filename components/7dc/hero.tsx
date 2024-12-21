@@ -12,6 +12,7 @@ import { Section, Container } from "@/components/craft";
 
 // Assets
 import Placeholder from "@/public/placeholder.jpg";
+import SignUpFormReact from "../ui/form-loops";
 
 export default function Hero() {
   return (
@@ -39,6 +40,7 @@ export default function Hero() {
             </Balancer>
           </h3>
           <EmailCTA />
+          <SignUpFormReact/>
            <div className="my-8 h-96 w-full overflow-hidden rounded-lg border md:h-[480px] md:rounded-xl">
           <Image 
             className="h-full w-full object-cover"
