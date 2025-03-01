@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import { ArrowRight } from "lucide-react";
+import { EB_Garamond, Reddit_Mono } from "next/font/google";
 
 // UI Components
 import { Button } from "@/components/ui/button";
@@ -11,6 +12,9 @@ import { Section, Container } from "@/components/craft";
 
 // Assets
 import Placeholder from "@/public/placeholder.jpg";
+
+// Initialize the font
+const ebGaramond = EB_Garamond({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
 export default function Hero() {
   return (
@@ -23,38 +27,65 @@ export default function Hero() {
             size="sm"
             variant="outline"
           >
-            <Link href="/">
-              Build, Learn, Sell, Play <ArrowRight className="ml-2 w-4" />
-            </Link>
+             <Link href="/">
+             To Build, Create, Learn with Your Highest Intelligence
+            </Link> 
           </Button>
-          <h1 className="!mb-1 font-bold">
+          <h1 className={`!mb-1 text-5xl font-medium ${ebGaramond.className}`}>
             <Balancer>
-              A place for a new-generation of digital brand wizards.
+              A Digital Path to Human Intelligence & Mastery
             </Balancer>
           </h1>
+          
           <h3 className="md:mt-3 md:text-m md:mb-5 text-muted-foreground">
             <Balancer>
-              A brand wizard: A person who is able to materialize the unpopular or unseen by following his or her purpose.
+              To actualize human creativity with the help of masters, teachers & yogis
+              <br/> The tools to live in surrender, abundance & presence
             </Balancer>
           </h3>
-          <div className="my-8 h-96 w-full overflow-hidden rounded-lg border md:h-[480px] md:rounded-xl">
-          <video 
-            className="h-full w-full object-cover"
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            poster="https://i.pinimg.com/736x/b6/ba/e7/b6bae79b56e4c06fb8f961f54c9ca2f0.jpg"
-            width={1000}
-            height={1000}
-          >
-            <source 
-              src="/videos/hero.mp4" 
-              type="video/mp4" 
-            />
-            Your browser does not support the video tag.
-          </video>
+
+          <Button className="bg-[#222222] ">
+           Portal Opening Soon
+          </Button>
+
+          <div className="flex flex-row my-4">
+            <div className="flex flex-col items-center">
+              <Image 
+                src="/art/image 39.png"
+                alt="Background image"
+                className="h-full w-full object-cover"
+                width={200}
+                height={200}
+                priority
+              />
+              <p className="text-center font-bold">Presence</p>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <Image 
+                src="/art/image 40.png"
+                alt="Background image"
+                className="h-full w-full object-cover"
+                width={200}
+                height={200}
+                priority
+              />
+              <p className=" text-center font-bold">Creativity</p>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <Image 
+                src="/art/image 41.png"
+                alt="Background image"
+                className="h-full w-full object-cover"
+                width={200}
+                height={200}
+                priority
+              />
+              <p className=" text-center font-bold">Mastery</p>
+            </div>
           </div>
+
         </div>
       </Container>
     </Section>

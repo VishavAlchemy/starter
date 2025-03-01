@@ -58,7 +58,7 @@ export function NavMenu() {
     <NavigationMenu className="hidden md:block">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+         {/*  <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -91,7 +91,7 @@ export function NavMenu() {
                 Unlock quantum focus. Do more in less time.
               </ListItem>
             </ul>
-          </NavigationMenuContent>
+          </NavigationMenuContent> */}
         </NavigationMenuItem>
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
@@ -112,7 +112,7 @@ export function NavMenu() {
         <NavigationMenuItem>
           <Link href="/about-me" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Me
+             About Vishav
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

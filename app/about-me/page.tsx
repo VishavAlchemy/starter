@@ -69,6 +69,13 @@ export default function AboutMe() {
               <br className="mb-1.5"></br>
               The ego was in the way.
               <br className="mb-1.5"></br>
+              Building startup a new-gen ed-tech (ALK Saga)
+              <br className="mb-1.5"></br>
+              Learning to code, building with IOS 
+              <br className="mb-1.5"></br>
+              Compressing purpose & intelligence
+              <br className="mb-1.5"></br>
+              <br className="mb-1.5"></br>
               <br className="mb-1.5"></br>
               <br className="mb-1.5"></br>
 

@@ -35,8 +35,7 @@ export default function Footer() {
             </Link>
             <p>
               <Balancer>
-                Alchemy - where the invisible turns visible.
-                For a new generation of brand builders.
+                Alchemy - where the invisible turns visible. Don't think... create. Be.
               </Balancer>
             </p>
           </div>

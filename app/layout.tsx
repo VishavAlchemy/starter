@@ -80,9 +80,9 @@ const Nav = ({ className, children, id }: NavProps) => {
         <div className="flex items-center gap-2">
           <NavMenu />
           <ThemeToggle />
-          <Button asChild className="hidden sm:flex">
+      {/*     <Button asChild className="hidden sm:flex">
             <Link href="/brand-genesis">Join our FREE 7-Day Challenge</Link>
-          </Button>
+          </Button> */}
           <MobileNav />
         </div>
       </div>
